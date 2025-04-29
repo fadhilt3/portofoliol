@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Fadhil <span>Rekh</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#Home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#About">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#Project">Project</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#my-skill">Skill</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#Contact">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#Home">Home</a>
+                <a href="#About">About</a>
+                <a href="#Project">Project</a>
+                <a href="#my-skill">Skill</a>
+                <a href="#Contact">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section id="Home">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="gambar/pp.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Halo guys saya <span>Fadhil</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">adalah seseorang <span class="typewriter-text"></span><label for="">|</label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">Fadhil adalah seorang pelajar SMK di SMK Telkom PWT kelas 10 X PPLG 6. Cita-cita saya sebagai seorang desainer dan developer.</p>
+                <div class="btn-primary" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <a href="fadhiltzy.png" class="btn" download="fadhiltzy.png" onclick="return confirmDownload()">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+    <div class="About" id="About" style="color: #077b32; align-items: center; display: flex; justify-content: center;">
+    </div>
+        <div class="container">
+            <div class="about-content">
+                <h1><span>About</span></h1>
+                <p>
+                    Halo! Saya <strong>Fadhil Rekh</strong>, siswa <strong>SMK Telkom PWT</strong> kelas <strong>10 X PPLG 6</strong>.  
+                    Saya memiliki minat dalam <strong>desain UI/UX</strong> dan <strong>pengembangan web</strong>. Saat ini,  
+                    saya terus belajar dan mengembangkan keterampilan di bidang teknologi untuk menjadi *desainer dan developer profesional*.
+                </p>
+                <p class="quote">"Bermimpi besar, belajar tanpa batas!"</p>
+            </div>
+    </section>
+    
+    <div class="Projek" id="Project">
+       
+        <h1><span>Project</span></h1>
+        <div class="Projek_image_box">
+            <div class="Projek_image">
+                <img src="gambar/projek/m.png">
+                <h3>Figma</h3>
+                <p>Desain web <br> toko sendiri</p>
+            </div>
+            <div class="Projek_image">
+                <img src="gambar/projek/v.png">
+                <h3>Adobe Illustrator</h3>
+                <p>Menggambar muka <br> sendiri pakai tool</p>
+            </div>
+            <div class="Projek_image">
+                <img src="gambar/projek/q.png">
+                <h3>Figma</h3>
+                <p>Desain web jualan <br> makanan diet</p>
+            </div>
+        </div>
+    </div>
+    <div class="my-skill" id="my-skill">
+        <h1><span>Skill</span></h1>
+        <div class="skill-list">
+            <h2>Frontend</h2>
+            <div class="skill-item">
+                <img src="gambar/myskil/html.png" alt="logo HTML" class="skill-logo" id="htmlSkill">
+                <p>HTML adalah bahasa markup standar untuk membuat halaman web. Ini memberikan struktur pada halaman web.</p>
+            </div>
+            <div class="skill-item">
+                <img src="gambar/myskil/css.png" alt="logo CSS" class="skill-logo" id="cssSkill">
+                <p>CSS adalah bahasa stylesheet yang digunakan untuk mendeskripsikan presentasi dokumen yang ditulis dalam HTML atau XML.</p>
+            </div>
+            <div class="skill-item">
+                <img src="gambar/myskil/js.png" alt="logo JavaScript" class="skill-logo" id="jsSkill">
+                <p>JavaScript adalah bahasa pemrograman yang menambahkan elemen interaktif pada situs web.</p>
+            </div>
+        </div>
+        <div class="skill-list">
+            <h2>UI/UE</h2>
+            <div class="skill-item">
+                <img src="gambar/myskil/figma.png" alt="logo Figma" class="skill-logo" id="Figma">
+                <p>Figma adalah editor grafis vektor dan alat desain UI yang sebagian besar berbasis web.</p>
+            </div>
+            <div class="skill-item">
+                <img src="gambar/myskil/adob (1).png" alt="logo Adobe" class="skill-logo" id="adobe">
+                <p>Adobe Creative Suite mencakup berbagai alat untuk desain grafis, pengeditan video, dan pengembangan web.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <section id="Contact">
+        <div class="contact-container">
+            <h1><span>Contact</span></h1>
+            <form class="contact-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Nama</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Kirim Pesan</button>
+            </form>
+            
+            <div class="social-links">
+                <h1><span>Hubungi</span></h1>
+                <a href="https://github.com/fadhilt3" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/0895385077298" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/fadhiiilll13/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@fadhiildhill?_t=ZS-8tyrZ0gklSU&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset:0});
+    </script>
+    <script src="z.js"></script>
+</body>
+</html>
